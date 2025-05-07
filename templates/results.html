@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<-ˍhtml lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Prediction Results</h2>
+        {% for interval, result in results %}
+            <div class="card">
+                <h3>{{ interval.title() }} Predictions</h3>
+                <p>Check your terminal or console for full model benchmark and charts.</p>
+            </div>
+        {% endfor %}
+        <a href="{{ url_for('home') }}" class="btn">Back</a>
+    </div>
+</body>
+</html>

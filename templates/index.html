@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NIFTY50 Stock Prediction Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>NIFTY50 Prediction Dashboard</h1>
+        <p>Visualize predictions from multiple LSTM models and ensemble techniques.</p>
+        <a href="{{ url_for('run_predictions') }}" class="btn">Run Predictions</a>
+    </div>
+</body>
+</html>
